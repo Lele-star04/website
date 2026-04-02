@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Service | OLLY MOTORS</title>
+    <meta name="description" content="Book your car service online with Olly Motors Garage. Fast, easy, and confirmed within the hour.">
+    <meta name="author" content="Earlleny Zvigumi">
+    <link rel="stylesheet" href="styles/normalization.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body data-page="book">
+
+    <!-- Navigation -->
+    <nav class="book-nav" aria-label="Main navigation">
+        <a class="nav-logo" href="index.html" aria-label="OLLY MOTORS Home">
+            OLLY <span>MOTORS</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="main-nav" role="list">
+            <a href="index.html"  data-page="home"  role="listitem">Home</a>
+            <a href="about.html"  data-page="about" role="listitem">About</a>
+            <a href="book.html"   data-page="book"  role="listitem">Book Now</a>
+        </div>
+    </nav>
+
+    <main class="book-page">
+        <div class="book-wrapper">
+
+            <div class="book-header">
+                <h1>Book Your Service</h1>
+                <p>Fill in the form below and we'll confirm your booking within the hour.</p>
+            </div>
+
+            <div class="book-form">
+
+                <!-- Success message (hidden until form submits) -->
+                <div class="form-success" id="form-success" role="alert">
+                    <div class="checkmark">✅</div>
+                    <h3>Booking Received!</h3>
+                    <p>Thank you — we'll be in touch shortly to confirm your appointment.</p>
+                </div>
+
+                <!-- Booking form — replace YOUR_FORM_ID with your Formspree ID -->
+                <form id="booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Banda" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. +260 97 123 4567" required autocomplete="tel">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required autocomplete="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="vehicle">Vehicle Make &amp; Model</label>
+                        <input type="text" id="vehicle" name="vehicle" placeholder="e.g. Toyota Corolla 2015" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">— Select a Service —</option>
+                                <option value="Full Service">Full Service</option>
+                                <option value="Oil Change">Oil Change</option>
+                                <option value="Brake Repair">Brake Repair</option>
+                                <option value="Engine Diagnostics">Engine Diagnostics</option>
+                                <option value="Suspension / Clutch">Suspension / Clutch</option>
+                                <option value="Detailing / Bodywork">Detailing / Bodywork</option>
+                                <option value="Inspection / Roadworthy">Inspection / Roadworthy</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Notes <small style="font-weight:400;text-transform:none;letter-spacing:0;">(optional)</small></label>
+                        <textarea id="message" name="message" placeholder="Describe the problem or anything we should know…"></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">Book Now</button>
+
+                    <div class="divider">or</div>
+
+                    <a href="https://wa.me/263774829066?text=Hi%20Olly%20Motors%2C%20I%20would%20like%20to%20book%20a%20service."
+                       class="wa-book"
+                       target="_blank"
+                       rel="noopener"
+                       aria-label="Book via WhatsApp">
+                        💬 Book via WhatsApp
+                    </a>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="nav-logo" href="index.html">OLLY <span>MOTORS</span></a>
+                <p>A family-owned garage built on honest work, fair prices, and getting you safely back on the road.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book.html">Book a Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="index.html">Repairs &amp; Maintenance</a></li>
+                    <li><a href="index.html">Vehicle Sales</a></li>
+                    <li><a href="index.html">Detailing &amp; Bodywork</a></li>
+                    <li><a href="index.html">Inspections</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>
+                    📍 123 Great East Road, Lusaka<br>
+                    📞 <a href="tel:+263774829066">+263 774 829 066</a><br>
+                    ✉️ <a href="mailto:zvigumiolly@gmail.com">zvigumiolly@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Olly Motors Garage. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

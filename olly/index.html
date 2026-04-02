@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLLY MOTORS — Honest Repairs, Fair Prices</title>
+    <meta name="description" content="Olly Motors Garage — certified mechanics, honest work, fair prices. Book your car service in Lusaka today.">
+    <meta name="author" content="Earlleny Zvigumi">
+    <link rel="stylesheet" href="styles/normalization.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body data-page="home">
+
+    <!-- Navigation -->
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-logo" href="index.html" aria-label="OLLY MOTORS Home">
+            OLLY <span>MOTORS</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="main-nav" role="list">
+            <a href="index.html"  data-page="home"  role="listitem">Home</a>
+            <a href="about.html"  data-page="about" role="listitem">About</a>
+            <a href="book.html"   data-page="book"  role="listitem">Book Now</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- Hero -->
+        <section class="hero" aria-label="Welcome Banner">
+            <img src="images/hero-bg.webp" alt="Olly Motors Garage — professional car service" class="bg-img" width="1500" height="800" fetchpriority="high">
+            <div class="hero-content">
+                <h1>WELCOME TO OLLY MOTORS</h1>
+                <p>Honest work. Fair prices. Every car treated like our own.</p>
+                <a href="book.html" class="hero-btn" data-page="book">Book a Service</a>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services-section" aria-label="Our Services">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Click on a service to learn more</p>
+            </div>
+
+            <div class="services-grid">
+
+            <div class="service-item">
+                <div class="service-header" onclick="toggleService(this)" role="button" aria-expanded="false">
+                    <h3><span class="icon">🔧</span> Repairs &amp; Maintenance</h3>
+                    <span class="arrow" aria-hidden="true">▼</span>
+                </div>
+                <div class="service-body">
+                    <p>We offer full vehicle repair and maintenance services to keep your car running smoothly.</p>
+                    <ul>
+                        <li>Oil changes and fluid top-ups</li>
+                        <li>Brake inspection and replacement</li>
+                        <li>Engine diagnostics</li>
+                        <li>Tyre rotation and balancing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-header" onclick="toggleService(this)" role="button" aria-expanded="false">
+                    <h3><span class="icon">🚗</span> Vehicle Sales</h3>
+                    <span class="arrow" aria-hidden="true">▼</span>
+                </div>
+                <div class="service-body">
+                    <p>Browse our wide selection of new and used vehicles at competitive prices.</p>
+                    <ul>
+                        <li>New car showroom</li>
+                        <li>Certified pre-owned vehicles</li>
+                        <li>Trade-in evaluations</li>
+                        <li>Flexible financing options</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-header" onclick="toggleService(this)" role="button" aria-expanded="false">
+                    <h3><span class="icon">🎨</span> Detailing &amp; Bodywork</h3>
+                    <span class="arrow" aria-hidden="true">▼</span>
+                </div>
+                <div class="service-body">
+                    <p>Professional detailing and bodywork to restore your vehicle to its best condition.</p>
+                    <ul>
+                        <li>Interior and exterior detailing</li>
+                        <li>Paint correction and polishing</li>
+                        <li>Dent and scratch repair</li>
+                        <li>Full respray services</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-header" onclick="toggleService(this)" role="button" aria-expanded="false">
+                    <h3><span class="icon">📋</span> Inspections &amp; Compliance</h3>
+                    <span class="arrow" aria-hidden="true">▼</span>
+                </div>
+                <div class="service-body">
+                    <p>We ensure your vehicle meets all safety and legal requirements.</p>
+                    <ul>
+                        <li>Roadworthy certificate checks</li>
+                        <li>Pre-purchase inspections</li>
+                        <li>Emissions testing</li>
+                        <li>Registration assistance</li>
+                    </ul>
+                </div>
+            </div><!-- /.services-grid -->
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="nav-logo" href="index.html">OLLY <span>MOTORS</span></a>
+                <p>A family-owned garage built on honest work, fair prices, and getting you safely back on the road.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="book.html">Book a Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="index.html">Repairs &amp; Maintenance</a></li>
+                    <li><a href="index.html">Vehicle Sales</a></li>
+                    <li><a href="index.html">Detailing &amp; Bodywork</a></li>
+                    <li><a href="index.html">Inspections</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>
+                    📍 123 Great East Road, Lusaka<br>
+                    📞 <a href="tel:+263774829066">+263 774 829 066</a><br>
+                    ✉️ <a href="mailto:zvigumiolly@gmail.com">zvigumiolly@gmail.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Olly Motors Garage. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

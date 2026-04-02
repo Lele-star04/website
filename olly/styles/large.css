@@ -1,0 +1,86 @@
+/* ============================================
+   LARGE.CSS — Desktop styles (min-width: 768px+)
+   ============================================ */
+
+@media (min-width: 600px) {
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Nav */
+    .nav-toggle { display: none !important; }
+    .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* Services — 4 equal columns */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    .about-hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding: calc(var(--nav-height) + 80px) 60px 80px;
+    }
+
+    .about-hero img {
+        height: 440px;
+        order: 2;
+    }
+
+    /* Contact grid */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    }
+
+    /* Reviews */
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Nav padding */
+    .site-nav,
+    .about-nav,
+    .book-nav {
+        padding: 0 48px;
+    }
+
+    .services-section {
+        max-width: 860px;
+        padding: 80px 24px;
+    }
+
+    .about-hero {
+        padding: calc(var(--nav-height) + 100px) 80px 100px;
+    }
+
+    .reviews-section,
+    .contact-section {
+        padding: 80px 60px;
+    }
+
+    .book-page {
+        padding: calc(var(--nav-height) + 60px) 24px 80px;
+    }
+}
